@@ -17,35 +17,38 @@ Content Name;Category ID CID;Persona ID PID;Maturity ID MID;Content Link;Content
 
 The three buckets are:
 
-Categories --> gives an idea about what kind of content is behind the link
+#### Categories
+gives an idea about what kind of content is behind the link \
 
-Categories;CID
-Events and Webinars;1
-Self-Paced Learning;2
-Training;3
-HowTo;4
-examples;6
-news;7
+Structure: Categories;CID
+- Events and Webinars;1
+- Self-Paced Learning;2
+- Training;3
+- HowTo;4
+- examples;6
+- news;7
 
---> Personas --> indicates for which kind of user group this content is relevant
+#### Personas
+indicates for which kind of user group this content is relevant
 
-Personas;PID
-Enduser;1
-Developer;2
-Champions;3
-Business;4
-Comms;5
-IT;7
-everyone;8
-ACM Team;9
+Structure: Personas;PID
+- Enduser;1
+- Developer;2
+- Champions;3
+- Business;4
+- Comms;5
+- IT;7
+- everyone;8
+- ACM Team;9
 
---> Maturity level --> respects current users experience to sort out too low- or high-level content
+#### Maturity level
+respects current users experience to sort out too low- or high-level content \
 
-Maturity Level;MID
-beginner;1
-advanced;2
-expert;3
-any;4
+Structure: Maturity Level;MID
+- beginner;1
+- advanced;2
+- expert;3
+- any;4
 
 
 
