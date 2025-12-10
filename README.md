@@ -15,7 +15,7 @@
 - all customizable
 - links to intenral resources can be added
 
-HINT: when addind internal resources mind your audience!
+HINT: when adding internal resources mind your audience!
 - Adding it just as additional resources like the rest will work super smooth, take appropriate classification
 - adding it as Knowldedge sources will also work fine, but as you with that add organizational data as source, PAYG will be needed for Copilot Chat users
 
