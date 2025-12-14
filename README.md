@@ -2,8 +2,9 @@
 - Repository containing a sample agent and according material and resources to establish an org-wide knowledge stream around AI at work. 
 - The goal is to enable the complete organization on AI at work with Microsoft 365 Copilot Chat and above
 - From Beginner to Advanced to Expert and Developer - according Personas and Maturity levels are built in
-- Can be used for free even with the free version "Microsoft 365 Copilot Chat" --> it's solely declarative and solel< webgrounded
-- It's ready to go and easy to implement - also offering different deplosment options
+- Can be used for free even with the free version "Microsoft 365 Copilot Chat" --> it's solely declarative and solely webgrounded
+- It's ready to go and easy to implement - also offering different deployment options
+- Agent can be used with different options, up to proactive user nudging through Power Automate
 - Mind: Community project without support or anything else.
 
 
@@ -13,7 +14,7 @@
 ## What's the deal
 - template content
 - all customizable
-- links to intenral resources can be added
+- links to internal resources can be added
 
 HINT: when adding internal resources mind your audience!
 - Adding it just as additional resources like the rest will work super smooth, take appropriate classification
