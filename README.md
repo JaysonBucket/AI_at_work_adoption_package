@@ -8,7 +8,8 @@
 - Mind: Community project without support or anything else.
 
 
-<img width="1377" height="1031" alt="image" src="https://github.com/user-attachments/assets/a253750f-ada4-4dd4-bee6-2e2ad61004f1" />
+<img width="457" height="418" alt="{C066FFD1-3E03-4C22-A637-7F7B6F821A40}" src="https://github.com/user-attachments/assets/b58d7cf6-8c36-4f3f-8ca2-4cf452a8331d" />
+
 
 
 ## What's the deal
