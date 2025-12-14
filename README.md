@@ -6,6 +6,7 @@
 - It's ready to go and easy to implement - also offering different deployment options
 - Agent can be used with different options, up to proactive user nudging through Power Automate
 - Mind: Community project without support or anything else.
+- HINT: depoloy once, use for ever - as full flexibility of content, this is meant to be the one stop shop around everything your users will need to learn, grow and be informed about AI at work
 
 
 <img width="457" height="418" alt="{C066FFD1-3E03-4C22-A637-7F7B6F821A40}" src="https://github.com/user-attachments/assets/b58d7cf6-8c36-4f3f-8ca2-4cf452a8331d" />
