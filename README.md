@@ -1,4 +1,5 @@
-##UPDATED --> now containing full Solution package, table definitions and everything you need to set up
+## UPDATED --> now containing full Solution package, table definitions and everything you need to set up
+## see overview and setup guide to be fully informed and ready to go
 
 # AI at work agent and adoption Package
 - Repository containing a sample agent and according material and resources to establish an org-wide knowledge stream around AI at work. 
@@ -10,6 +11,10 @@
 - Mind: Community project without support or anything else.
 - HINT: depoloy once, use for ever - as full flexibility of content, this is meant to be the one stop shop around everything your users will need to learn, grow and be informed about AI at work
 
+### Overall Overview
+<img width="1710" height="1005" alt="image" src="https://github.com/user-attachments/assets/7eed77f6-068b-4666-b422-c2da506a0b1a" />
+
+
 ### Agent Experience
 <img width="457" height="418" alt="{C066FFD1-3E03-4C22-A637-7F7B6F821A40}" src="https://github.com/user-attachments/assets/b58d7cf6-8c36-4f3f-8ca2-4cf452a8331d" />
 
@@ -17,7 +22,7 @@
 <img width="1914" height="1073" alt="{282B487E-32C6-48C3-84BF-BB40B847FEBC}" src="https://github.com/user-attachments/assets/f8e8e40a-4788-41fd-b105-5a06eda8f2fd" />
 
 ### Solution Design
-<img width="1915" height="1073" alt="{E0B32DF9-8CCE-4F69-8F93-030B58433729}" src="https://github.com/user-attachments/assets/0ad008d0-f235-4d0e-a527-18834deb2593" />
+<img width="1783" height="1011" alt="image" src="https://github.com/user-attachments/assets/ba8ebc6a-9043-4462-8e99-e54c19ae55f5" />
 
 ### Detailed View on Contents and Usage Scenarios
 <img width="1917" height="1076" alt="{1939331D-A593-45FA-94C5-41F8F9E734B7}" src="https://github.com/user-attachments/assets/eeb4942e-6c2a-4c09-b4a1-f47e356365d4" />
