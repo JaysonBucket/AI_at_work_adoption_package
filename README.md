@@ -1,6 +1,6 @@
+##UPDATED --> now containing full Solution package, table definitions and everything you need to set up
+
 # AI at work agent and adoption Package
-- !! under construction, nevertheless the simple Agent Builder source already is available and fully functional
-- !! Currently only declarative instructions available but fully functional --> see [HowTo Video here](https://www.youtube.com/watch?v=OUJ2QMdkSmU)
 - Repository containing a sample agent and according material and resources to establish an org-wide knowledge stream around AI at work. 
 - The goal is to enable the complete organization on AI at work with Microsoft 365 Copilot Chat and above
 - From Beginner to Advanced to Expert and Developer - according Personas and Maturity levels are built in
