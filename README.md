@@ -1,15 +1,10 @@
-## UPDATED --> now containing full Solution package, table definitions and everything you need to set up
-## see overview and setup guide to be fully informed and ready to go
+# AI at Work Agent & Adoption Package
 
-# AI at work agent and adoption Package
-- Repository containing a sample agent and according material and resources to establish an org-wide knowledge stream around AI at work. 
-- The goal is to enable the complete organization on AI at work with Microsoft 365 Copilot Chat and above
-- From Beginner to Advanced to Expert and Developer - according Personas and Maturity levels are built in
-- Can be used for free even with the free version "Microsoft 365 Copilot Chat" --> it's solely declarative and solely webgrounded
-- It's ready to go and easy to implement - also offering different deployment options
-- Agent can be used with different options, up to proactive user nudging through Power Automate
-- Mind: Community project without support or anything else.
-- HINT: depoloy once, use for ever - as full flexibility of content, this is meant to be the one stop shop around everything your users will need to learn, grow and be informed about AI at work
+### Executive Summary
+AI at Work Agent & Adoption Package is a declarative Copilot agent combined with an adoption framework to enable AI literacy across the entire organization. Users are reached directly in 1:1 Teams chat via proactive agent nudges, ensuring high visibility, relevance, and real acceptance of AI topics in daily work. Its evergreen design allows centrally planned nudges to continuously land monthly feature updates, new scenarios, and learning content directly with users, creating fast, additive value over time.
+
+### Value
+Direct 1:1 Teams nudging turns the agent into an active adoption channel rather than a passive knowledge base, maximizing attention and engagement. Centrally planned, evergreen nudges ensure that Copilot updates, new features, and best practices reach users quickly and consistently, without relying on traditional comms channels. This significantly reduces time to value while sustaining long‑term adoption with minimal operational effort.
 
 ### Overall Overview
 <img width="855" height="502" alt="image" src="https://github.com/user-attachments/assets/7eed77f6-068b-4666-b422-c2da506a0b1a" />
@@ -22,7 +17,37 @@
 
 ### Enduser Prompt Tipps Experience
 <img width="675" height="341" alt="image" src="https://github.com/user-attachments/assets/fde992c4-e9c6-40ac-adba-04b14ceae6cb" />
+<br>
+<br>
 
+### Goal
+- Enable organization‑wide AI literacy around Microsoft 365 Copilot and AI at work
+- Support users from Beginner to Expert/Developer based on role, persona, and maturity
+- Establish a centralized, trusted “one‑stop shop” for AI learning, inspiration, and updates
+- Drive ongoing adoption beyond one‑time trainings or campaigns
+- Lower entry barriers by supporting even free Microsoft 365 Copilot Chat users
+
+### Solution
+- Declarative Copilot agent fully web‑grounded and free to use
+- Curated content repository structured by persona, maturity, and category
+- Flexible deployment options, from passive discovery to proactive nudging via Power Automate
+- Centrally planned 1:1 Teams nudges for feature updates, scenarios, and learning content
+- Clear content governance model separating public and optional internal resources
+
+### Value Proposition:
+- Deploy once, reuse indefinitely with full content flexibility
+- Proactive 1:1 Teams communication ensures maximum visibility and acceptance
+- No PAYG, no custom build, no operational overhead
+- Relevant recommendations through lightweight bucketization and IDs
+- Supports adoption, enablement, communications, champions, IT, and developers alike
+- Easy extensibility by adding internal links without breaking the model
+
+### Problem Statement:
+- AI learning content is scattered across portals, links, and communities
+- Users are overwhelmed by volume and unsure where to start
+- Existing enablement efforts are often one‑off, role‑agnostic, or not scalable
+- Copilot updates do not reliably reach users in their daily workflow
+- Organizations lack a proactive, evergreen mechanism to land AI change continuously
 
 ## What's the deal
 - template content
