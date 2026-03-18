@@ -7,8 +7,9 @@ AI at Work Agent & Adoption Package is a declarative Copilot agent combined with
 Direct 1:1 Teams nudging turns the agent into an active adoption channel rather than a passive knowledge base, maximizing attention and engagement. Centrally planned, evergreen nudges ensure that Copilot updates, new features, and best practices reach users quickly and consistently, without relying on traditional comms channels. This significantly reduces time to value while sustaining long‑term adoption with minimal operational effort.
 <br>
 <br>
-Add these additional contents for maximum overall value:
+**Add these additional contents for maximum overall value**
 - Safe AI with Copilot Chat Learning Path https://github.com/JaysonBucket/Copilot-Chat-Safe-AI-Learning-Path
+- M365 Learning Pathways https://github.com/pnp/custom-learning-office-365
 - Copilot Chat Success Kit https://adoption.microsoft.com/en-us/copilot-chat/success-kit/
 - Copilot Success Kit https://adoption.microsoft.com/en-us/copilot/success-kit/
 <br>
