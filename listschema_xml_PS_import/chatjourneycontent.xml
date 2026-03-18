@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.18.0.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-31D61318F1B446959BF7472253E97B16">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-31D61318F1B446959BF7472253E97B16" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Copilot Chat Journey Content" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Copilot Chat Journey Content" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Copilot Chat Journey Content/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Copilot Chat Journey Content/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Copilot Chat Journey Content/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{FE85CF47-BB8E-4724-827C-72B719EB8F9A}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Alle Elemente" Url="{site}/Lists/Copilot Chat Journey Content/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="Day" />
+                <FieldRef Name="Headline" />
+                <FieldRef Name="DailyContent" />
+                <FieldRef Name="Prompt" />
+                <FieldRef Name="PromptLink" />
+                <FieldRef Name="AdditionalInformation" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <ColumnWidth>
+                <FieldRef Name="Prompt" width="274" />
+                <FieldRef Name="Subject" width="418" />
+                <FieldRef Name="Additional Information" width="366" />
+                <FieldRef Name="Headline" width="251" />
+                <FieldRef Name="Daily Content" width="403" />
+                <FieldRef Name="Prompt Link" width="314" />
+                <FieldRef Name="Day" width="110" />
+              </ColumnWidth>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CommaSeparator="TRUE" CustomUnitOnRight="TRUE" Decimals="0" DisplayName="Day" Format="Dropdown" Name="Day" Percentage="FALSE" Title="Day" Type="Number" Unit="None" ID="{635d441b-d4b3-4a40-8198-470b05c2e4fc}" Version="2" StaticName="Day" SourceID="{{listid:Copilot Chat Journey Content}}" ColName="float1" RowOrdinal="0" />
+            <Field DisplayName="Headline" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="Headline" Title="Headline" Type="Text" ID="{cebf08db-81d8-4bb3-a62f-b977c24131c0}" SourceID="{{listid:Copilot Chat Journey Content}}" StaticName="Headline" ColName="nvarchar7" RowOrdinal="0" />
+            <Field AppendOnly="FALSE" ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Daily Content" Format="Dropdown" IsolateStyles="FALSE" Name="DailyContent" RichText="FALSE" RichTextMode="Compatible" Title="Daily Content" Type="Note" ID="{89419b5a-f283-45e4-8aa6-14c52643b2fb}" Version="4" StaticName="DailyContent" SourceID="{{listid:Copilot Chat Journey Content}}" ColName="ntext2" RowOrdinal="0" />
+            <Field AppendOnly="FALSE" DisplayName="Prompt" Format="Dropdown" IsModern="TRUE" IsolateStyles="FALSE" Name="Prompt" RichText="FALSE" RichTextMode="Compatible" Title="Prompt" Type="Note" ID="{224ae849-3eba-423c-ba51-48c3e3b91a3b}" SourceID="{{listid:Copilot Chat Journey Content}}" StaticName="Prompt" ColName="ntext3" RowOrdinal="0" />
+            <Field AppendOnly="FALSE" DisplayName="Additional Information" Format="Dropdown" IsModern="TRUE" IsolateStyles="FALSE" Name="AdditionalInformation" RichText="FALSE" RichTextMode="Compatible" Title="Additional Information" Type="Note" ID="{16f87f0b-46ab-4d37-b219-b37e24a81157}" SourceID="{{listid:Copilot Chat Journey Content}}" StaticName="AdditionalInformation" ColName="ntext4" RowOrdinal="0" />
+            <Field AppendOnly="FALSE" ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Prompt Link" Format="Dropdown" IsolateStyles="FALSE" Name="PromptLink" RichText="FALSE" RichTextMode="Compatible" Title="Prompt Link" Type="Note" ID="{bbedab92-bcc3-42a8-bde6-ab79e8dedf9b}" Version="2" StaticName="PromptLink" SourceID="{{listid:Copilot Chat Journey Content}}" ColName="ntext5" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Titel" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Farbkennzeichnung" />
+          </pnp:FieldRefs>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">2_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">1</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Communicate like a pro with Microsoft 365 Copilot Chat.</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Welcome to the Great Copilot Journey for Microsoft 365 Copilot Chat. Over the next six weeks, you’ll embark on a daily email series that will transform how you work with Copilot Chat. Each week focuses on a different skill, and each day you’ll receive a single prompt to practice as you go through your day. It’s an easy and quick way to become a pro at using Copilot Chat, one simple prompt at a time. 
+ 
+This week, we kick things off by elevating your writing and communication prowess. Ready? Let&amp;#39;s dive in! 
+ 
+Just click on the link, or open Copilot Chat and type in this prompt: </pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Prepare a daily brief of news from the [finance industry] regarding [cryptocurrency].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Looking for a bit of humor? Tailor this prompt to match your desired tone and style.
+ 
+Pro tip: Simply hover over a submitted prompt and click the bookmark icon to save it or share the link with your team. 
+ 
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdJNE5tSXlaR1ppTFRZeU1tSXROR1F4WWkxaU56TTBMVFUyTWpka05HUmhPV0pqWkh4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQ==</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">200</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">1_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">3_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">2</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Communicate in other languages with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Discover a world of communication with Microsoft 365 Copilot Chat! Effortlessly translate text into other languages and explore how easy it can be to break language barriers.
+ 
+Click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">How do you say [thank you for your time] in Japanese?</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Ask Copilot to translate text into your preferred language, making it easier to connect and communicate with others around the globe.
+ 
+Love this prompt? Hover over a submitted prompt and click the bookmark icon to save it or share the link with your team.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRFeU5qZ3lNakprTFRNMU5tWXROREF5WXkxaVpERmlMV1poTlRJeE4yRTRNekZsTTN4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQ==</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">300</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">2_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">4_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">3</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Write an email with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Get ready to revolutionize your email game with Copilot Chat! Imagine drafting emails that are polished, professional, and tailored to your needs—all with a few simple clicks. Let’s do this!
+ 
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Draft an email to [Mila] about [reviewing the proposal by FriDay ].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Add specific details or try pasting an email and letting Copilot craft a polished response for you.
+ 
+Want to use this prompt again? Hover over a submitted prompt and click the bookmark icon to save it or share the link with your team.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRsaFl6SmxOVEU1TFRjNE1UUXROREkxWkMwNVlXRmxMVEF4TjJOa1pXSmpNelk0WTN4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">400</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">3_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">5_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">4</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Improve your writing with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Unleash your inner wordsmith with Microsoft 365 Copilot Chat! Whether you&amp;#39;re crafting an email or polishing a report, Copilot Chat is here to help elevate your writing to captivate your audience.
+ 
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Analyze the text in the following and make suggestions on how to improve it: [Insert text].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">You can also upload a Microsoft Word document and get feedback from Copilot to streamline it for you.
+ 
+Find this prompt useful? Simply hover over a submitted prompt and click the bookmark icon to save it or share the link with your team.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdKaU9EUTFOMll6TFRka1pEWXRORGc1TXkwNU0yRXpMVFV4TXpJeE5tUTJOekJpWkh4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQ==</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">500</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">4_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">6_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">5</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Get creative with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Coloring books don’t have to be for children. They can help adults relieve stress and improve focus, too. So let’s use Microsoft 365 Copilot to create an image to practice some mindfulness toDay .
+ 
+Click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Create a simple coloring book image for my child featuring [our family pet]. The image should be clean line art with black outlines on a white background with open space for coloring. The outlines should be closed paths and complete objects. There should be no stray lines or smudges. Include a fun setting to further engage my child in the coloring experience.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Adjust the prompt for your audience and share the image with your team for a mindful team activity.
+ 
+Next week, we’ll learn how to use Copilot to kickstart your work.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdVMU5UUTBOVEJpTFRNM01UQXROR0ppWWkxaFlUa3pMVEF5WkdVd1ltTTJZekZtTTN4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQ==</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">600</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">5_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">7_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">6</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Kickstart your work with Microsoft 365 Copilot Chat.</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Welcome to week 2 of your Great Copilot Journey with Microsoft 365 Copilot Chat! This week, we’re diving into how Copilot Chat can help you kickstart your work and reclaim precious time.
+ 
+Let’s start by using Copilot Chat to summarize a long document.
+ 
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Summarize this: [Upload document].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Specify your audience and the style of the summary you need, like three paragraphs or a bullet list. 
+
+To save a submitted prompt or share the link with your team, hover over the prompt and click the bookmark icon.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRKaU9UTTNaVGhpTFdJNU1EZ3ROR05rWkMwNVlUVTJMV1JrTnpBNU1tWXdNalEyWm54bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">700</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">6_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">8_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">7</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Draft documents with Microsoft 365 Copilot Chat.</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Why struggle with a blank page when you can let Microsoft 365 Copilot Chat get you started? With just this prompt, you can watch your ideas transform into compelling drafts, saving you time and kickstarting your work. Let&amp;#39;s generate a first draft together!
+ 
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Create a blog post about [the latest research on AI]. Be sure to include an engaging headline and a call to action at the end.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Provide the necessary details you wish to include and create the type of document you need.
+
+Love saying time with Copilot Chat? Hover over a prompt and click the bookmark icon to save. You can also share it with your team to help kickstart their work. 
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRGaVpUTmpaR1ZqTFRWaU4yWXRORFJsTXkxaVltVmhMVFl6TmpZMk5URXlPV0kyTW54bGJpMVZVdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">800</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">7_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">9_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">8</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Extract key takeaways with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Ever feel swamped by endless documents? With Microsoft 365 Copilot Chat, you can quickly summarize documents and extract key takeaways in no time. Here we go!
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">List key points from this document. [Upload file].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Upload a Microsoft Word or PowerPoint document and use Copilot Chat to grasp the essential points and get started on actions in no time.
+
+Share this prompt with your team or save it for future use by hovering over the prompt and clicking the bookmark icon.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdSa05qWmlNakpoTFRZME1XWXRORGszWkMxaU5EQTJMVE14TmpnME5qUTNNV00xWlh4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">900</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">8_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">10_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">9</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Refine your ideas with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">When you have a rough idea but need some help refining it and putting it into action, Microsoft 365 Copilot Chat is ready to help:
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Come up with 3 ideas for products merging technology and [productivity], and provide a sample business plan for each.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Copilot Chat can help you brainstorm and develop your ideas further so you can get started in no time.
+
+This is a great prompt to share with your team and save for future use. Just hover over the prompt and click the bookmark button.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdNMk1HTmhPVFJrTFRsaU1UVXRORGsyTUMxaU5XUmhMVEk1WkRBd05UWTRNVEUyTjN4bGJpMVZVdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">1000</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">9_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">11_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">10</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Spice up your next presentation with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Are you ready for your next big presentation but need some ideas to make it more engaging? Use Microsoft 365 Copilot Chat to get ideas on how to inject some fun and humor throughout your deck:
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Suggest ways to add some fun and humor into this presentation. Give specific examples of what I might include and where these would be included in the deck: [Upload presentation].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Spice up your next presentation to capture your audience’s attention and lighten the mood.
+
+Love these prompts and want to use them again? Simply hover over a submitted prompt and click the bookmark icon to save it. Better yet, share the link with your team to help them kickstart their work, too!
+
+Next week, we’ll dive into using Copilot Chat to extract valuable insights.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRjMlJtTFdsdWRDNXZabVpwWTJVdVkyOXRMM3hrZFcxdGVYeGpaVFZpWldZek9TMDVOVGd6TFRRelpXVXRZV1ZpTWkwMk5EWmlOVGszWVRjek9HVjhaVzR0ZFhNJTNkIiwic2NlbmFyaW8iOiJzaGFyZWxpbmtjb3BpbG90am91cm5leWNvbW1zIiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJtaWNyb3NvZnQifSwiY2hhdFR5cGUiOiJ3ZWIiLCJ2ZXJzaW9uIjoxLjF9</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">1100</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">10_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">12_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">11</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Elevate your expertise with Microsoft 365 Copilot Chat.</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Let’s embark on week 3 of the Great Copilot Journey! This week, we’re leveraging the power of Microsoft 365 Copilot Chat to expand your expertise and uncover valuable insights.
+
+Do you have a term or acronym that you aren’t really sure what it means? Copilot Chat is here to help.
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Explain [Blockchain Technology] in simple terms.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Ask Copilot to explain, clarify or elaborate on terms or concepts.
+
+Another handy tip? Just hover over the submitted prompt and click the bookmark icon to save it or share the link with your team. It&amp;#39;s as easy as that!
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdVeVltVTRaVEppTFRGaE9USXRORGN6TmkwNE5XUmlMVGN6TmpFd056STVZMlJtWTN4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQ==</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">1200</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">11_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">13_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">12</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Turn statistics into visuals with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">ToDay , we’ll use Microsoft 365 Copilot Chat to turn numbers into charts. Let’s bring your numbers to life and make data analysis a breeze!
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Create a pie chart showing [the market share of smartphones in the United States].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Provide your own statistics and create the type of chart you need with ease.
+
+Working with a lot of numbers? Save this prompt by hovering over it and clicking the bookmark icon. You can also share the link with your team.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdVNU5tTXhOVEUzTFRWbVlXRXRORGMxWXkxaFltRXpMVEptWXpabU5UWXlabUV3TjN4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQ==</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">1300</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">12_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">14_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">13</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Dive into your favorite topic with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Whether you&amp;#39;re diving into the depths of your favorite topic or uncovering the latest industry trends, let Microsoft 365 Copilot Chat guide you through your research.
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Prepare a daily brief of news from the [finance industry] regarding [cryptocurrency].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Feel empowered to dig deeper into other topics, pose follow-up questions, and unveil detailed insights.
+
+Love to learn? Save this prompt by hovering over it and clicking the bookmark icon, and share the link with your team to keep on learning.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdJNE5tSXlaR1ppTFRZeU1tSXROR1F4WWkxaU56TTBMVFUyTWpka05HUmhPV0pqWkh4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQ==</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">1400</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">13_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">15_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">14</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Spark ideas with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Ready to ignite your creativity? With Microsoft 365 Copilot Chat, you have a brainstorming buddy at your fingertips, ready to generate innovative ideas for your project. Let’s get creative!
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Suggest 10 ideas for [a group project on influencer marketing].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Use this prompt to brainstorm and generate innovative ideas for your projects, meetings, and more.
+
+There are never enough ideas, right? Quickly use this prompt again by hovering over it and clicking on the bookmark icon to save it.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdNM01USTVOR0ZqTFdFeE1qY3ROR1kzTnkwNVlXTmhMVFpsWkRreFpEYzJaV1l5TW54bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">1500</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">14_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">16_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">15</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Let’s have some team fun with Microsoft 365 Copilot</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Did you know that bananas are berries but strawberries aren’t? Or that octopuses have three hearts? Get ready to explore some interesting and random facts about the world with Microsoft 365 Copilot Chat.
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Tell me an interesting fact and hypothesize what it reveals about the world.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">This can be a great ice breaker prompt for your next team meeting. You can also share one of your own fun facts and ask what it reveals about yourself.
+
+Hover over a submitted prompt and click the bookmark icon to save it.
+
+Get ready for next week as we delve into mastering Copilot Chat to boost your organization and efficiency.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRFNVpqSXdOams1TFRaaVl6Y3ROR1UzWXkwNVkyTTBMV0poTjJSaFl6SmlZMkZtWm54bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">1600</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">15_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">17_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">16</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Increase your organizational skills with Microsoft 365 Copilot Chat.</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Get ready for an exciting week 4 of the Great Copilot Journey! This week, we’re diving into Microsoft 365 Copilot Chat to help you stay organized and get the most out of your workweek.
+
+First up: better collaboration with your team.
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Suggest common questions that can be asked to get a retrospective started with my colleagues.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Use prompts like this to break the ice, energize your meetings and spark meaningful conversations.
+
+Fun tip: Hover over a prompt you&amp;#39;ve sent and click the bookmark icon to save it. Then, share it with your team and let the fun begin!
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRjM016VmlNVGxpTFdJME1XRXRORFppTnkwNE5tWXdMV1kxWW1KbE9HSmhPRFU1Wkh4bGJpMVZVdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">1700</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">16_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">18_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">17</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Conquer your routine with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">ToDay , we’ll conquer your Day like a superhero. Use Microsoft 365 Copilot Chat to get inspiration to streamline your workDay and say hello to more productivity and efficiency throughout your Day .
+
+Click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Suggest a daily routine to help me stay organized at work.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">You can also ask Copilot for tips to conquer procrastination or streamline your daily routines.
+
+Speaking of routines: Hover over your submitted prompt and click the bookmark icon to easily find it again later.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdRNFptVTRZakUyTFRVM1pEZ3ROREU0TkMxaE16RTJMVFJoT1RZMU1tVmtNek15T1h4bGJpMVZVdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">1800</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">17_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">19_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">18</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Leverage Microsoft 365 Copilot as your personal coach</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Did you know that with Microsoft 365 Copilot Chat, you can unlock expert advice and tailored coaching to conquer your goals and elevate your success? Let’s give it a shot.
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">What questions should I ask myself when making a decision about [changing my career]?</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Think of Copilot Chat as your personal coach, ready to offer advice! Just add more details and get advice at your fingertips.
+
+An extra piece of advice: Save this prompt and share it with your team. Just hover over the prompt and click on the bookmark icon.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRnME5XSmhPR1E1TFRjMk1tSXROREU1TXkwNE16TXlMVGd4TVdNeE5UYzBOVGsxT1h4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">1900</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">18_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">20_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">19</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Let’s get creative with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Unleash your inner artist with Microsoft 365 Copilot Chat and craft stunning visuals with ease and flair. Ready to transform your ideas into captivating images? Let your imagination soar with toDay ’s prompt.
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Create a professional-looking background that highlights [the early signs of spring].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">You don’t need to be a creative designer to craft stunning visuals‍—Copilot Chat is here to assist you every step of the way
+
+You don’t have to wait for the next season. Just save this prompt by clicking on the bookmark icon and create something new anytime.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdRd09EVTRZV1V4TFRWaFlqUXRORGt3WXkxaFlqQmtMVFJqTkdSaU5XUTROV00zTTN4bGJpMVZVdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">2000</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">19_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">21_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">20</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Use a touch of humor before your trip with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Who doesn’t love a trip to sunny beaches or snowy mountains? Let’s start your vacation early by using Microsoft 365 Copilot Chat to write your Out of Office messages that will leave your coworkers chuckling. Ready?
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Write some funny Out of Office email responses to use while I’m on vacation in [Hawaii] from [March 11-15].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">A touch of humor can make your time away more fun and enjoyable, even for your coworkers. Enjoy!
+ 
+If you love the prompts, you can easily save them by hovering over and clicking the bookmark icon. You can also share your favorite prompts with your team to inspire and collaborate effectively.
+ 
+Next week, we&amp;#39;ll harness the power of Copilot Chat to unlock your full potential and fuel your personal growth.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdWbU5tSTBZMlZpTFdVeE5HTXRORFZrTVMxaFkyTTVMV1kzTW1VeU1UazFOR1F4T0h4bGJpMVZVdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">2100</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">20_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">22_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">21</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Leverage Microsoft 365 Copilot Chat for personal and professional growth.</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">In week 5, let’s embark on an exciting chapter of the Great Copilot Journey! Discover the potential of Microsoft 365 Copilot Chat to enhance your skills, drive personal growth, and achieve new heights.
+ 
+Let’s start by learning best practices.
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">How do I write a [request for proposal]?</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Unleash Copilot&amp;#39;s potential to gain insights and best practices on topics that piques your interest!
+ 
+Save this handy prompt for future use. Just hover over a submitted prompt and click the bookmark icon to save it or share the link with your team.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdVek5HSTVaamMzTFRJMk5UTXROREkyTkMxaE1UTXpMVFkxT0RKallqazNZekZoTVh4bGJpMVZVdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">2200</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">21_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">23_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">22</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Explore your favorite topic with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Ever wanted to learn something new but never had the time to do so? Microsoft 365 Copilot Chat can help you expand your knowledge in no time!
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Help me learn about [macroeconomics].</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Explore your favorite subject or delve into a new topics. Copilot is ready to help you learn.
+ 
+Want to save or share this prompt? Just hover over it and click the bookmark icon!
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRjell6QmlObVJpTFRjME4yWXRORFJpTnkwNFpEYzFMVGhoWm1ReE9ERTJaams1Wm54bGJpMVZVdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">2300</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">22_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">24_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">23</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Get tips and tricks with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">It’s time to learn some tips and tricks. ToDay , we’ll ask Microsoft 365 Copilot Chat to provide you with best practices to help you improve your skills and expand your expertise.
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">What are some tips for writing a great [LinkedIn post]?</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Enhance your personal brand or get tips and tricks to improve your skills.
+ 
+Here’s another tip: Keep learning by saving this prompt. Just hover over it and click on the bookmark icon.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRkaU9UQXdOak5pTFRVd09HVXRORE5pTUMxaU5XUTRMV0kxTjJJeE1UVTFZak01T0h4bGJpMVZVdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">2400</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">23_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">25_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">24</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Use Microsoft 365 Copilot Chat to explore your favorite topic.</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Whether you’re thinking about a big purchase decision or exploring a topic you’re curious about, asking the right questions can help lead you on the path to informed decisions and deeper knowledge. Let’s dive in with Microsoft 365 Copilot Chat.
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Can you provide a comprehensive list of questions to ask about [space exploration technologies] to gain deeper insights?</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Ask Copilot Chat to explore the questions you are most interested in to dive even deeper into your topic.
+ 
+A prompt for you? Share this prompt with your team and save it to your prompts. Just hover over the submitted prompt and click the bookmark button.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdNMlpHRTBNMlZtTFRobE5HSXRORFJoWkMxaU1XTTBMVFk0T0RnMlpqVm1NV1ZtWW54bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQo=</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">2500</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">24_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">26_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">25</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Create your secret sauce to success with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Sometimes unconventional advice can be the secret to success. Let’s use Microsoft 365 Copilot Chat to help you create your secret sauce to stand out and4 excel.
+
+Just click on the link, or open Copilot Chat and type in this prompt:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">If I wanted to master [public speaking], what unconventional advice would you offer?</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Want to make this prompt more fun? Ask Copilot to present the advice in the style of a [tennis] coach.
+
+Like this prompt? Hover over it, click the bookmark icon to save it, or share the link with your team.
+ 
+You’re almost at the finish line! Next week, we’ll dive into advanced tips and tricks to help you get the most out of Copilot on your own.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdJNFlUWXdaR1kwTFRNME9EY3RORGRtTWkwNVpEbGtMV0ZtTnpWaE1HRTBOVFZsWm54bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVsaW5rY29waWxvdGpvdXJuZXljb21tcyIsInByb3BlcnRpZXMiOnsicHJvbXB0U291cmNlIjoibWljcm9zb2Z0In0sImNoYXRUeXBlIjoid2ViIiwidmVyc2lvbiI6MS4xfQ==</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">2600</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">25_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">27_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">26</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">You made it! Discover advanced tips and tricks to master Microsoft 365 Copilot Chat.</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Congratulations! You&amp;#39;ve reached the final week of the Great Copilot Journey! Now that you&amp;#39;ve mastered the guided prompts, it&amp;#39;s time to explore the possibilities of Microsoft 365 Copilot Chat on your own. This week, we&amp;#39;ll provide best practices and valuable resources to empower your continued success.
+ 
+Keep the momentum going with prompts from the Copilot Prompt Gallery.</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Learn essential tips and tricks to craft effective prompts and discover curated prompts that are ready to use.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Save this resource and share it with your teammates to boost their Copilot skills and discover new prompts.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://www.Copilot.Microsoft.com</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">2700</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">26_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">28_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">27</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Learn how to use Agent Builder in Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Did you know that you can create your own custom agent in Microsoft 365 Copilot Chat? Agents can handle complex tasks and processes for you, like helping you project manage or checking a document for compliance. These AI-driven agents are experts who can work alongside you. Let’s create one!</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Utilize the Agent Builder in Copilot Chat to create agents tailored to your specific needs.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://aka.ms/Copilot/JourneyAgents</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">2800</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">27_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">29_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">28</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Find inspiration with the Copilot Scenario Library</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Need some inspiration to see how you can use Microsoft 365 Copilot Chat for your specific role or industry? We have just the right resource for you:</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Discover creative ways to use Copilot Chat with specific use cases for various different industries or departments.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Bookmark this resource and find regularly updated scenarios and ideas to help improve your workDay .
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://aka.ms/Copilot/JourneyLibrary</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">2900</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">28_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">30_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">29</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Imagine a dream destination with Microsoft 365 Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">You’re almost at the end of the Great Copilot Journey, so let’s dream up a destination together! Ever wanted to stay in a hotel on the moon or find a cozy café tugged away in a fairytale forest? Now’s the time to imagine just that while learning prompting best practices!</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Improve your prompting skills with a step-by-step guide to creating your dream destination. Let your imagination run wild.</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">Complete this project as a team activity and create your own team’s travel magazine. It takes about 20 minutes to complete.
+
+To learn more or see what’s ahead on your journey, visit aka.ms/Copilot/ChatJourney.</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://aka.ms/Copilot/JourneyProject</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">3000</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">29_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">31_</pnp:DataValue>
+              <pnp:DataValue FieldName="Day">30</pnp:DataValue>
+              <pnp:DataValue FieldName="Headline">Let’s celebrate your achievement!</pnp:DataValue>
+              <pnp:DataValue FieldName="DailyContent">Congratulations on completing the Great Copilot Journey! After 30 Day s, you are now a Copilot Power User!</pnp:DataValue>
+              <pnp:DataValue FieldName="Prompt">Download your completion badge and share it with your team and network to showcase your accomplishment</pnp:DataValue>
+              <pnp:DataValue FieldName="AdditionalInformation">We hope you enjoyed the Great Copilot Journey! But don't let the adventure end here. Dive back in anytime by visiting aka.ms/Copilot/ChatJourney and keep exploring the possibilities that Copilot Chat has to offer. Keep pushing the boundaries of your imagination and see where Copilot can take you next!</pnp:DataValue>
+              <pnp:DataValue FieldName="PromptLink">https://aka.ms/Copilot/JourneyBadge</pnp:DataValue>
+              <pnp:DataValue FieldName="Order">3100</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">30_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://germanywestcentral1-0.pushnp.svc.ms/notifications?token=bb34c35a-6ecb-4dc4-9077-91286adae8b6%2Fb!Jps_N2g_qUi1v4b2e-OAh9jiqlsmiCNFnrBcPSJ-IndiL-ZrRP5bQJt790rPVWwk" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://germanywestcentral1-0.pushnp.svc.ms/notifications?token=bb34c35a-6ecb-4dc4-9077-91286adae8b6%2Fb!OmaCG-Ws00-gsfftbUK769jiqlsmiCNFnrBcPSJ-IndbrraclBmsQYcIG9nV8oPM" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

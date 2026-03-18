@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.18.0.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-500A3FB3C51446B5B4FA6BCB9AE3F683">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-500A3FB3C51446B5B4FA6BCB9AE3F683" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Nudge Planner" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Nudge Planner" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Nudge Planner/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Nudge Planner/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Nudge Planner/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{6B321081-C4E9-4075-B56B-9555BEDC4B07}" MobileView="TRUE" Type="HTML" DisplayName="Alle Elemente" Url="{site}/Lists/Nudge Planner/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{8F161362-90DB-442C-9909-4A2D60C3EE7C}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="0 All" Url="{site}/Lists/Nudge Planner/AllItems1.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="NudgingDate" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="Status" />
+                <FieldRef Name="ContentFlag" />
+                <FieldRef Name="Headline" />
+                <FieldRef Name="BodyContent" />
+                <FieldRef Name="Owner" />
+                <FieldRef Name="Targetgroup" />
+                <FieldRef Name="ContentURL" />
+                <FieldRef Name="NudgingDate" />
+                <FieldRef Name="PublishTimestamp" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <ColumnWidth>
+                <FieldRef Name="Body Content" width="631" />
+                <FieldRef Name="Content URL" width="276" />
+                <FieldRef Name="Targetgroup" width="252" />
+              </ColumnWidth>
+            </View>
+            <View Name="{D0EAF2A9-13A5-4219-92C6-6EEF389DECEF}" Type="HTML" DisplayName="1 Today" Url="{site}/Lists/Nudge Planner/Due Today.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="NudgingDate" />
+                    <Value Type="DateTime">
+                      <Today />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="Status" />
+                <FieldRef Name="ContentFlag" />
+                <FieldRef Name="Targetgroup" />
+                <FieldRef Name="Headline" />
+                <FieldRef Name="BodyContent" />
+                <FieldRef Name="ContentURL" />
+                <FieldRef Name="NudgingDate" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+            <View Name="{2A4586BC-98B4-4902-A4A9-466BE6498F4A}" Type="HTML" DisplayName="3 Drafts" Url="{site}/Lists/Nudge Planner/Drafts.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Status" />
+                    <Value Type="Text">Draft</Value>
+                  </Eq>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="NudgingDate" Ascending="TRUE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="Status" />
+                <FieldRef Name="ContentFlag" />
+                <FieldRef Name="Headline" />
+                <FieldRef Name="BodyContent" />
+                <FieldRef Name="ContentURL" />
+                <FieldRef Name="NudgingDate" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ColumnWidth>
+                <FieldRef Name="Body Content" width="689" />
+              </ColumnWidth>
+              <ViewData />
+            </View>
+            <View Name="{6FEC8DFC-B218-42CA-851A-1880A7C92157}" Type="HTML" DisplayName="2 Planned" Url="{site}/Lists/Nudge Planner/Planned.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Status" />
+                    <Value Type="Text">Planned</Value>
+                  </Eq>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="NudgingDate" Ascending="TRUE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="Status" />
+                <FieldRef Name="ContentFlag" />
+                <FieldRef Name="Headline" />
+                <FieldRef Name="BodyContent" />
+                <FieldRef Name="ContentURL" />
+                <FieldRef Name="NudgingDate" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ColumnWidth>
+                <FieldRef Name="Body Content" width="537" />
+              </ColumnWidth>
+              <ViewData />
+            </View>
+            <View Name="{B2FACC03-4491-4551-A054-E9FD4B7E6E72}" Type="HTML" DisplayName="4 Published" Url="{site}/Lists/Nudge Planner/4 Published.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Status" />
+                    <Value Type="Text">Published</Value>
+                  </Eq>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="NudgingDate" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="Status" />
+                <FieldRef Name="ContentFlag" />
+                <FieldRef Name="Headline" />
+                <FieldRef Name="BodyContent" />
+                <FieldRef Name="ContentURL" />
+                <FieldRef Name="NudgingDate" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ColumnWidth>
+                <FieldRef Name="Body Content" width="575" />
+              </ColumnWidth>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Headline" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="Headline" Title="Headline" Type="Text" ID="{d7409d40-8453-4174-84e0-0ba98201232b}" SourceID="{{listid:Nudge Planner}}" StaticName="Headline" ColName="nvarchar7" RowOrdinal="0" />
+            <Field DisplayName="Nudging Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" IsModern="TRUE" Name="NudgingDate" Title="Nudging Date" Type="DateTime" ID="{5f3b2279-9d40-479b-85c4-eb32cfb9e03e}" SourceID="{{listid:Nudge Planner}}" StaticName="NudgingDate" ColName="datetime1" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;planned&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue sp-css-color-CornflowerBlueFont sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;published&quot;]},&quot;sp-css-backgroundColor-BgMintGreen sp-css-color-MintGreenFont sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;draft&quot;]},&quot;sp-css-backgroundColor-BgGold sp-css-color-GoldFont sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;&quot;]},&quot;&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;[$Status]&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;planned&quot;]},&quot;sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;published&quot;]},&quot;sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;draft&quot;]},&quot;sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}}}]}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" DisplayName="Status" FillInChoice="FALSE" Format="Dropdown" Name="Status" Title="Status" Type="Choice" ID="{f9139f47-3415-453b-bb77-22f6ef58004c}" Version="2" StaticName="Status" SourceID="{{listid:Nudge Planner}}" ColName="nvarchar8" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>planned</CHOICE>
+                <CHOICE>published</CHOICE>
+                <CHOICE>draft</CHOICE>
+              </CHOICES>
+              <Default>draft</Default>
+            </Field>
+            <Field AppendOnly="FALSE" DisplayName="Body Content" Format="Dropdown" IsModern="TRUE" IsolateStyles="FALSE" Name="BodyContent" RichText="FALSE" RichTextMode="Compatible" Title="Body Content" Type="Note" ID="{edf2fc7d-32cf-4538-ba95-96e8c206a87e}" SourceID="{{listid:Nudge Planner}}" StaticName="BodyContent" ColName="ntext2" RowOrdinal="0" />
+            <Field CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;forEach&quot;:&quot;__INTERNAL__ in @currentField&quot;,&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$__INTERNAL__]&quot;,&quot;Copilot Chat&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue sp-css-color-CornflowerBlueFont sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$__INTERNAL__]&quot;,&quot;M365 Copilot&quot;]},&quot;sp-css-backgroundColor-BgMintGreen sp-css-color-MintGreenFont sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$__INTERNAL__]&quot;,&quot;Agents&quot;]},&quot;sp-css-backgroundColor-BgGold sp-css-color-GoldFont sp-css-color-GoldFont&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;[$__INTERNAL__]&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$__INTERNAL__]&quot;,&quot;Copilot Chat&quot;]},&quot;sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$__INTERNAL__]&quot;,&quot;M365 Copilot&quot;]},&quot;sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$__INTERNAL__]&quot;,&quot;Agents&quot;]},&quot;sp-css-color-GoldFont&quot;,&quot;&quot;]}]}]}}}]}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" DisplayName="Content Flag" FillInChoice="FALSE" Format="Dropdown" IsModern="TRUE" Name="ContentFlag" Title="Content Flag" Type="MultiChoice" ID="{f14ad508-cc22-47c4-ad01-77aa3259a3bc}" SourceID="{{listid:Nudge Planner}}" StaticName="ContentFlag" ColName="ntext3" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Copilot Chat</CHOICE>
+                <CHOICE>M365 Copilot</CHOICE>
+                <CHOICE>Agents</CHOICE>
+              </CHOICES>
+            </Field>
+            <Field DisplayName="Content URL" Format="Hyperlink" IsModern="TRUE" Name="ContentURL" Title="Content URL" Type="URL" ID="{524bfc80-bc9f-4821-b5b8-fee4de98ad4b}" SourceID="{{listid:Nudge Planner}}" StaticName="ContentURL" ColName="nvarchar9" RowOrdinal="0" ColName2="nvarchar10" RowOrdinal2="0" />
+            <Field DisplayName="PublishTimestamp" FriendlyDisplayFormat="Disabled" Format="DateTime" IsModern="TRUE" Name="PublishTimestamp" Title="PublishTimestamp" Type="DateTime" ID="{f3802269-0ea6-4d46-a456-e2a65a626a01}" SourceID="{{listid:Nudge Planner}}" StaticName="PublishTimestamp" ColName="datetime2" RowOrdinal="0" />
+            <Field DisplayName="Targetgroup" Format="Dropdown" IsModern="TRUE" List="UserInfo" Mult="TRUE" Name="Targetgroup" Title="Targetgroup" Type="UserMulti" UserSelectionMode="1" UserSelectionScope="0" ID="{9e0e558d-d98a-4c09-b085-7c07a631a249}" SourceID="{{listid:Nudge Planner}}" StaticName="Targetgroup" ColName="int1" RowOrdinal="0" />
+            <Field DisplayName="Owner" Format="Dropdown" IsModern="TRUE" List="UserInfo" Name="Owner" Title="Owner" Type="User" UserSelectionMode="0" UserSelectionScope="0" ID="{0e772582-1249-492d-9283-d4dc40592e9a}" SourceID="{{listid:Nudge Planner}}" StaticName="Owner" ColName="int2" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Titel" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Farbkennzeichnung" />
+          </pnp:FieldRefs>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title" />
+              <pnp:DataValue FieldName="Headline">Copilot Basic News in May 2026</pnp:DataValue>
+              <pnp:DataValue FieldName="NudgingDate" />
+              <pnp:DataValue FieldName="Status">draft</pnp:DataValue>
+              <pnp:DataValue FieldName="BodyContent">Here are our hand-selected features coming to your desk from May on!
+- one
+- two
+- three
+- four
+
+Share your expereiences within the community!
+</pnp:DataValue>
+              <pnp:DataValue FieldName="ContentFlag">Copilot Chat</pnp:DataValue>
+              <pnp:DataValue FieldName="ContentURL">https://support.microsoft.com/en-us/topic/get-started-with-microsoft-365-copilot-chat-5b00a52d-7296-48ee-b938-b95b7209f737,Follow this link to get started today!</pnp:DataValue>
+              <pnp:DataValue FieldName="PublishTimestamp" />
+              <pnp:DataValue FieldName="Targetgroup" />
+              <pnp:DataValue FieldName="Owner" />
+              <pnp:DataValue FieldName="Order">100</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">1_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title" />
+              <pnp:DataValue FieldName="Headline">Copilot Premium Feature Update May 2026</pnp:DataValue>
+              <pnp:DataValue FieldName="NudgingDate" />
+              <pnp:DataValue FieldName="Status">draft</pnp:DataValue>
+              <pnp:DataValue FieldName="BodyContent">Here are our hand-selected features coming to your desk from May on!
+- one
+- two
+- three
+- four
+
+Share your expereiences within the community!
+</pnp:DataValue>
+              <pnp:DataValue FieldName="ContentFlag">M365 Copilot</pnp:DataValue>
+              <pnp:DataValue FieldName="ContentURL">https://techcommunity.microsoft.com/category/microsoft365copilot/blog/microsoft365copilotblog,Follow this Link to explore all News</pnp:DataValue>
+              <pnp:DataValue FieldName="PublishTimestamp" />
+              <pnp:DataValue FieldName="Targetgroup" />
+              <pnp:DataValue FieldName="Owner" />
+              <pnp:DataValue FieldName="Order">200</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">2_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title" />
+              <pnp:DataValue FieldName="Headline">Copilot Studio Updates coming up!</pnp:DataValue>
+              <pnp:DataValue FieldName="NudgingDate" />
+              <pnp:DataValue FieldName="Status">draft</pnp:DataValue>
+              <pnp:DataValue FieldName="BodyContent">As Copilot Studio is constantly evolving we want to make sure that you as Citizen Developer Community are always up to date. Here comes or quick summary, all news to be found on the Blog.
+- one
+- two
+- three
+- four
+
+What's your favourite?</pnp:DataValue>
+              <pnp:DataValue FieldName="ContentFlag">Agents</pnp:DataValue>
+              <pnp:DataValue FieldName="ContentURL">https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/?msockid=10bdb884f6126c7c175eae73f2126783,This way to explore the Copilot Studio Blog</pnp:DataValue>
+              <pnp:DataValue FieldName="PublishTimestamp" />
+              <pnp:DataValue FieldName="Targetgroup" />
+              <pnp:DataValue FieldName="Owner" />
+              <pnp:DataValue FieldName="Order">300</pnp:DataValue>
+              <pnp:DataValue FieldName="FileLeafRef">3_.000</pnp:DataValue>
+              <pnp:DataValue FieldName="MetaInfo"></pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Vollzugriff" />
+              <pnp:RoleAssignment Principal="{associatedvisitorgroupid}" RoleDefinition="Lesen" />
+              <pnp:RoleAssignment Principal="{associatedmembergroupid}" RoleDefinition="Bearbeiten" />
+              <pnp:RoleAssignment Principal="i:0#.f|membership|fabian@kupfers.onmicrosoft.com" RoleDefinition="Vollzugriff" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://germanywestcentral1-0.pushnp.svc.ms/notifications?token=bb34c35a-6ecb-4dc4-9077-91286adae8b6%2Fb!Jps_N2g_qUi1v4b2e-OAh9jiqlsmiCNFnrBcPSJ-Inc1FAhYSFnbSJeHa4JZ2qTP" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://germanywestcentral1-0.pushnp.svc.ms/notifications?token=bb34c35a-6ecb-4dc4-9077-91286adae8b6%2Fb!OmaCG-Ws00-gsfftbUK769jiqlsmiCNFnrBcPSJ-Incey4Jl6axmRIPrKOKRsBBc" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
