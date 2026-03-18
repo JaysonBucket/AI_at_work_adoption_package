@@ -1,0 +1,147 @@
+﻿ListSchema={"schemaXmlList":["<Field ID=\"{fa564e0f-0c70-4ab9-b863-0177e6ddd247}\" Type=\"Text\" Name=\"Title\" DisplayName=\"Title\" Required=\"FALSE\" SourceID=\"http://schemas.microsoft.com/sharepoint/v3\" StaticName=\"Title\" FromBaseType=\"TRUE\" MaxLength=\"255\" />","<Field CommaSeparator=\"TRUE\" CustomUnitOnRight=\"TRUE\" DisplayName=\"Day\" Format=\"Dropdown\" IsModern=\"TRUE\" Name=\"Day\" Percentage=\"FALSE\" Title=\"Day\" Type=\"Number\" Unit=\"None\" ID=\"{635d441b-d4b3-4a40-8198-470b05c2e4fc}\" StaticName=\"Day\" />","<Field DisplayName=\"Headline\" Format=\"Dropdown\" IsModern=\"TRUE\" MaxLength=\"255\" Name=\"Headline\" Title=\"Headline\" Type=\"Text\" ID=\"{cebf08db-81d8-4bb3-a62f-b977c24131c0}\" StaticName=\"Headline\" />","<Field AppendOnly=\"FALSE\" ClientSideComponentId=\"00000000-0000-0000-0000-000000000000\" DisplayName=\"Daily Content\" Format=\"Dropdown\" IsolateStyles=\"FALSE\" Name=\"DailyContent\" RichText=\"FALSE\" RichTextMode=\"Compatible\" Title=\"Daily Content\" Type=\"Note\" ID=\"{89419b5a-f283-45e4-8aa6-14c52643b2fb}\" StaticName=\"DailyContent\" />","<Field AppendOnly=\"FALSE\" DisplayName=\"Prompt\" Format=\"Dropdown\" IsModern=\"TRUE\" IsolateStyles=\"FALSE\" Name=\"Prompt\" RichText=\"FALSE\" RichTextMode=\"Compatible\" Title=\"Prompt\" Type=\"Note\" ID=\"{224ae849-3eba-423c-ba51-48c3e3b91a3b}\" StaticName=\"Prompt\" />","<Field AppendOnly=\"FALSE\" DisplayName=\"Additional Information\" Format=\"Dropdown\" IsModern=\"TRUE\" IsolateStyles=\"FALSE\" Name=\"AdditionalInformation\" RichText=\"FALSE\" RichTextMode=\"Compatible\" Title=\"Additional Information\" Type=\"Note\" ID=\"{16f87f0b-46ab-4d37-b219-b37e24a81157}\" StaticName=\"AdditionalInformation\" />","<Field AppendOnly=\"FALSE\" ClientSideComponentId=\"00000000-0000-0000-0000-000000000000\" DisplayName=\"Prompt Link\" Format=\"Dropdown\" IsolateStyles=\"FALSE\" Name=\"PromptLink\" RichText=\"FALSE\" RichTextMode=\"Compatible\" Title=\"Prompt Link\" Type=\"Note\" ID=\"{bbedab92-bcc3-42a8-bde6-ab79e8dedf9b}\" StaticName=\"PromptLink\" />","<Field ID=\"{82642ec8-ef9b-478f-acf9-31f7d45fbc31}\" DisplayName=\"Title\" Description=\"\" Name=\"LinkTitle\" SourceID=\"http://schemas.microsoft.com/sharepoint/v3\" StaticName=\"LinkTitle\" Type=\"Computed\" ReadOnly=\"TRUE\" FromBaseType=\"TRUE\" Width=\"150\" DisplayNameSrcField=\"Title\" Sealed=\"FALSE\"><FieldRefs><FieldRef Name=\"Title\" /><FieldRef Name=\"LinkTitleNoMenu\" /><FieldRef Name=\"_EditMenuTableStart2\" /><FieldRef Name=\"_EditMenuTableEnd\" /></FieldRefs><DisplayPattern><FieldSwitch><Expr><GetVar Name=\"FreeForm\" /></Expr><Case Value=\"TRUE\"><Field Name=\"LinkTitleNoMenu\" /></Case><Default><HTML><![CDATA[<div class=\"ms-vb itx\" onmouseover=\"OnItem(this)\" CTXName=\"ctx]]></HTML><Field Name=\"_EditMenuTableStart2\" /><HTML><![CDATA[\">]]></HTML><Field Name=\"LinkTitleNoMenu\" /><HTML><![CDATA[</div>]]></HTML><HTML><![CDATA[<div class=\"s4-ctx\" onmouseover=\"OnChildItem(this.parentNode); return false;\">]]></HTML><HTML><![CDATA[<span>&nbsp;</span>]]></HTML><HTML><![CDATA[<a onfocus=\"OnChildItem(this.parentNode.parentNode); return false;\" onclick=\"PopMenuFromChevron(event); return false;\" href=\"javascript:;\" title=\"Open Menu\"></a>]]></HTML><HTML><![CDATA[<span>&nbsp;</span>]]></HTML><HTML><![CDATA[</div>]]></HTML></Default></FieldSwitch></DisplayPattern></Field>"]}
+"Day","Headline","Daily Content","Prompt","Prompt Link","Additional Information"
+"1","Let’s save time with Copilot. ","Welcome to the Great Copilot Journey! Through this 6-week interactive email series, you will learn about all the ways Microsoft 365 Copilot can empower you to be more efficient and creative, provide help with tedious tasks, and improve your workday to achieve more. Each week focuses on a different skill, and each day you’ll receive a single prompt to practice as you go through your day. It’s an easy and quick way to become a pro at using Copilot, one simple prompt at a time. 
+
+Week 1 will start by using Copilot to give you something everyone could use in their day—more time. 
+
+Ready? The first stop: Microsoft 365 Copilot Chat—the app that connects to your work data and files, as well as data from the web, to help you catch up, analyze, summarize, learn, and create. It’s the chat experience at the center of Copilot. Open Copilot Chat and practice this prompt throughout your day today: ","What’s the latest from /[person’s name] organized by emails, chats, and files?","https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdVNU1tRm1NRE5tTFdRd1pEa3RORGcwTnkwNE5HUTFMVGt5TURBeU5tSmxZbUUyTkh4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVMaW5rIiwiY2hhdFR5cGUiOiJ3b3JrIiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJtaWNyb3NvZnQiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjQtMTAtMzFUMTY6NTk6NTUuNTc0WiJ9LCJ2ZXJzaW9uIjoxLjF9?auth=2","This prompt works for projects as well. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"2","Catch up on meetings with Microsoft 365 Copilot. ","Today, you’ll learn how to catch up on meetings with Microsoft 365 Copilot. Open a meeting chat in Microsoft Teams, click the Copilot icon and practice this prompt on meetings throughout your day: ","Recap the topic of this meeting. ",,"You can also ask for action items or find out who said what. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"3","Understand documents in no time<br>with Microsoft 365 Copilot. ","Reading and understanding long documents can be time-consuming. Go to a Microsoft Word document, click on the Microsoft 365 Copilot icon and use this prompt throughout your day to quickly get the main takeaways of your documents: "," Summarize this document in three key points. ",,"Try this prompt in other apps like Microsoft PowerPoint as well. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"4","Write emails quickly with Microsoft 365 Copilot. ","When you only have a few minutes to respond to an email, Microsoft 365 Copilot has your back. Reply to an email thread in Microsoft Outlook, click the Copilot icon and practice this prompt throughout your day: "," Draft a reply to /[person’s name] asking them for [topic]. ",,"You can also draft a brand-new email with Copilot. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"5","Let's have some fun with Microsoft 365 Copilot! ","You made it through the first week of the Great Copilot Journey! Congratulations! Now it’s time to have some fun with Microsoft 365 Copilot and reflect on your week — open Microsoft 365 Copilot Chat and use this prompt: ","Summarize my week in the style of a comedy roast. ","https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRjM1kyTTFaakpoTFRRM1lUTXRORFEwTlMxaFlXTTVMVEU0TXpjM05ERXdaR1ZpTVh4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVMaW5rIiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJtaWNyb3NvZnQiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjQtMTItMTVUMDE6NTI6NTQuODAyWiJ9LCJjaGF0VHlwZSI6IndvcmsiLCJ2ZXJzaW9uIjoxLjF9","Share this prompt (or your result) with your coworkers to brighten their day. 
+
+Next week, we’ll learn how to use Copilot to kickstart your work. To learn more or see what’s ahead on your journey, visit https://aka.ms/GreatCopilotJourney. "
+"6","Let's get creative with Microsoft 365 Copilot! ","Welcome back to week 2 of the Great Copilot Journey! This week, your journey will be all about supercharging your creativity and kickstarting your work with Microsoft 365 Copilot. Let’s open Microsoft 365 Copilot Chat and brainstorm with Copilot throughout your day with this prompt: ","Suggest 10 compelling titles for [topic, project, or /file]. ","https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRBeE1ERmlOR1UyTFRFMVlqVXRORFkwWWkxaFltWmhMV1F5WkdNMk5EaGlaakJpTlh4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVMaW5rIiwiY2hhdFR5cGUiOiJ3b3JrIiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJtaWNyb3NvZnQiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjQtMTAtMzFUMTc6MDM6MjkuODA1WiJ9LCJ2ZXJzaW9uIjoxLjF9?auth=2","Copilot can help you brainstorm anything—try it out. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"7","Get a jumpstart on your work<br>with Microsoft 365 Copilot. ","Instead of starting with a blank page, let’s explore drafting a document with Microsoft 365 Copilot. Open a blank Microsoft Word document, click the Copilot icon and try prompts like the one below throughout your day: "," Create an FAQ based on /[file name]. ",,"Use prompts like this to draft reports, briefs or any type of document you need. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney."
+"8","Quickly create draft decks with Microsoft 365 Copilot. ","Creating presentations in Microsoft PowerPoint is so much easier with the help of Microsoft 365 Copilot. Open a new presentation, click the Copilot icon, and practice this prompt: "," Create a presentation from /[file]. ",,"You can add more details to the prompt, and then edit and refine the deck as needed. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"9","Create images from scratch with Microsoft 365 Copilot. ","You don’t need to be a designer to create images. Microsoft 365 Copilot is here to help! Open Microsoft 365 Copilot Chat and get creative with this prompt: ","Design an image of a drawing of [a database in colored pencil]. Place the database on a pedestal. ","https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRWbVlUQXlOV1ZoTFRFd05qUXROREprTWkwNVl6QmtMV00wTWpOaVlXSTJZMlpsWTN4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVMaW5rIiwiY2hhdFR5cGUiOiJ3b3JrIiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJtaWNyb3NvZnQiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjQtMTEtMDFUMTg6Mzg6MTUuNjM0WiJ9LCJ2ZXJzaW9uIjoxLjF9?auth=2","Get creative with the style, colors and feel of your image. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"10","Pitch a project as a commercial<br>with Microsoft 365 Copilot ","Week 2 of the Great Copilot Journey is in the books! So, let’s have some fun with Microsoft 365 Copilot. Open Microsoft 365 Copilot Chat and use this prompt to create a funny ad script to pitch your favorite project: ","Create a clever elevator pitch for a movie idea to help me introduce [project] to my leadership team.","https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkdVMU1UTTVNbVkzTFdSaVpHSXRORE15T1MxaE1USmtMVEkwT0RJNFl6VTBZak5qTm54bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVMaW5rIiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJtaWNyb3NvZnQiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjQtMTItMTVUMDE6NTU6MTAuOTY3WiJ9LCJjaGF0VHlwZSI6IndvcmsiLCJ2ZXJzaW9uIjoxLjF9","Have some fun with this and share your result with your team. 
+
+Next week, we’ll learn how to use Copilot to expand your expertise and gather insights. To learn more or see what’s ahead on your journey, visit https://aka.ms/GreatCopilotJourney. "
+"11","Expand your expertise<br>with Microsoft 365 Copilot. ","The more you know, the better your work can be. This week in the Great Copilot Journey, we'll use Microsoft 365 Copilot to expand your expertise, gain knowledge and gather insights. Ready? Let’s open Microsoft 365 Copilot Chat and try this prompt for a few topics: ","Help me learn about [topic]. Start with a detailed write up that explains what it is and why it’s important. ","https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRjell6QmlObVJpTFRjME4yWXRORFJpTnkwNFpEYzFMVGhoWm1ReE9ERTJaams1Wm54bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVMaW5rIiwiY2hhdFR5cGUiOiJ3b3JrIiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJtaWNyb3NvZnQiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjQtMTAtMzFUMTc6MDM6MjAuNzYwWiJ9LCJ2ZXJzaW9uIjoxLjF9?auth=2","Copilot can help you learn about anything and answer your follow-up questions, too. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"12","Get tips to improve your work<br>with Microsoft 365 Copilot. ","Today, we’ll focus on using Microsoft 365 Copilot to help you improve your work. Open an existing Microsoft Word document, click the Copilot icon and use this prompt: ","Give me specific examples from this document on how I can improve it for [a leadership review]. ",,"You can also use Copilot to simplify a document or rewrite it. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"13","Gain insights with the help of<br>Microsoft 365 Copilot. ","Finding insights from large data sets can be difficult. Let’s use Microsoft 365 Copilot to identify trends in Microsoft Excel. Open an existing spreadsheet, click the Copilot icon, and start with this prompt: ","Are there any trends in my data? ",,"Add more details or ask specific questions about what insights you’re looking for. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"14","Get coaching with Microsoft 365 Copilot. ","Today, we’ll use Microsoft 365 Copilot as your coach to give you tips and tricks to improve your work. Open Microsoft 365 Copilot Chat and use this prompt for a few different topics: "," Give me tips to [improve my LinkedIn presence]. 
+ 
+ ","https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRCbVpEa3pOR05sTFRJMFpXSXROR1F4WlMxaVlUa3pMV1pqWWpjeE5EbG1aV1prTlh4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVMaW5rIiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJtaWNyb3NvZnQiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjQtMTItMTVUMDE6NTY6MzMuMjY1WiJ9LCJjaGF0VHlwZSI6IndvcmsiLCJ2ZXJzaW9uIjoxLjF9","Ask Copilot for to coach you on any topic you’re interested in. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"15","Get personalized tips with Microsoft 365 Copilot. ","You’ve reached the halfway point of the Great Copilot Journey! It’s time to use humor and wit to get actionable advice with Microsoft 365 Copilot. Pick your favorite topic of interest, open Microsoft 365 Copilot Chat and try this prompt: "," In the style of a [tennis] coach using [tennis] analogies, help me improve my performance and habits by looking over my recent work and communications. ","https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRVeE5qZzJPVEprTFdGaFpqWXRORFJrT0MwNVlqWTFMVEV3WVdVME16QTVNR00zTUh4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVMaW5rIiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJtaWNyb3NvZnQiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjQtMTItMTVUMDE6NDQ6NTcuMjY5WiJ9LCJjaGF0VHlwZSI6IndvcmsiLCJ2ZXJzaW9uIjoxLjF9","Share this prompt with your team and see what interest they pick. It’s fun. 
+
+Next week, we’ll learn how to use Copilot to enhance collaboration with your team. To learn more or see what’s ahead on your journey, visit https://aka.ms/GreatCopilotJourney. "
+"16","Enhance collaboration<br>with Microsoft 365 Copilot. ","You may have heard the saying ""teamwork makes the dream work."" That's the spirit of week 4 of the Great Copilot Journey. We will use Microsoft 365 Copilot to enhance your collaboration with your team. Let's open Microsoft 365 Copilot Chat and practice this prompt: ","Suggest common questions that can be asked to get a retrospective started with my colleagues. For real","https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRhVzUwTG05bVptbGpaUzVqYjIwdmZHUjFiVzE1ZkRjM016VmlNVGxpTFdJME1XRXRORFppTnkwNE5tWXdMV1kxWW1KbE9HSmhPRFU1Wkh4bGJpMTFjdyUzZCUzZCIsInNjZW5hcmlvIjoic2hhcmVMaW5rIiwiY2hhdFR5cGUiOiJ3b3JrIiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJtaWNyb3NvZnQiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjQtMTAtMzFUMTc6MDA6MzYuODkyWiJ9LCJ2ZXJzaW9uIjoxLjF9?auth=2","Use prompts like this for ice breakers, kick-off calls or other meetings throughout your day. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"17","Keep up the momentum<br>with Microsoft 365 Copilot. ","Just got out of a productive meeting? Keep the momentum going by following up with your colleagues with the help of Microsoft 365 Copilot. Start a new email in Microsoft Outlook, click the Copilot icon, and practice this prompt throughout your day: ","Write a follow-up email to /[meeting] to drive continued progress. ",,"Ask Copilot to include action items or list the pros and cons of what was discussed. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"18","Get organized for meetings<br>with Microsoft 365 Copilot. ","An agenda is like having a map, with important stops that will bring your team along and keep you on track. Let’s open a new page in Microsoft Loop, click the Copilot icon and use this prompt: ","Draft an agenda for /[meeting].",,"Add relevant details of topics you want to cover. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"19","Generate ideas with Microsoft 365 Copilot. ","Sometimes you need that first spark to get a discussion or brainstorm started. Let’s use Microsoft 365 Copilot help. While in a Microsoft Teams meeting, click the Copilot icon and try this prompt. (Don’t worry, others on the call can’t see what you type into Copilot). ","What questions can the group ask to generate more ideas or insights? Limit each to 30-60 characters. ",,"Also ask Copilot if there are any points your team might not be thinking of. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"20","Let’s have some fun<br>with Microsoft 365 Copilot. ","What’s a journey without a little fun with your team? Open Microsoft 365 Copilot Chat and use this prompt to find out what kind of superhero squad your team would be: ","Act like a comic book writer with a flair for turning ordinary teams into extraordinary heroes. Invent a superhero team that includes me and my current top 5 collaborators. Look at my emails, teams chats, and meetings from the last 2 weeks to get inspiration for each person’s strengths, work habits and unique contributions. Give each person a fun superhero name, superpowers, nemesis and signature move. Format this like a character dossier. 
+ ","https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlRXbGpjbTl6YjJaMFZqSjhhSFIwY0hNNkx5OXpkV0p6ZEhKaGRHVXRjMlJtTFdsdWRDNXZabVpwWTJVdVkyOXRMM3hrZFcxdGVYdzJNR1U1TURCbU5DMHpNMlJpTFRSbFpEY3RZamRtT1Mxa09HVmlaVEptTURnMU56TjhaVzR0ZFhNJTNkIiwic2NlbmFyaW8iOiJzaGFyZUxpbmsiLCJwcm9wZXJ0aWVzIjp7InByb21wdFNvdXJjZSI6Im1pY3Jvc29mdCIsImNsaWNrVGltZXN0YW1wIjoiMjAyNC0xMi0xMFQyMDowOTo0NC44NTJaIn0sImNoYXRUeXBlIjoid29yayIsInZlcnNpb24iOjEuMX0","Ready to save the day? Share this prompt (and your result) with your team. 
+
+Next week, we’ll learn how to turn Copilot agents into your personal coaches. To learn more or see what’s ahead on your journey, visit https://aka.ms/GreatCopilotJourney. "
+"21","Learn how to use agThanki ents in Microsoft 365 Copilot. ","Week 5 of the Great Copilot Journey is all about using agents in Microsoft 365 Copilot Chat. Agents work like a personal coach that specializes in a specific field. Microsoft 365 Copilot comes with several ready-made agents that have pre-configured prompt suggestions, making it easy to get the coaching you need. 
+ 
+Let’s start with Prompt Coach to help you create better prompts. Go to Copilot Chat, open the side pane on the right, and select the Prompt Coach agent. Let’s go! ","Analyze my prompt and provide feedback on how I could improve it: [insert your prompt]. ","https://www.microsoft365.com/chat","This coach can help you get better at prompting, so you get the results you want. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"22","Get creative with Idea Coach<br>in Microsoft 365 Copilot. ","Having a creative partner to help you spark new ideas can be a game changer. Idea Coach is the agent in Microsoft 365 Copilot that can help you with your creative tasks. 
+ 
+Let’s try it. Go to Microsoft 365 Copilot Chat, open the side pane on the right, and select Idea Coach. Here we go! "," Can you help me find fun exercises for my Brainstorming session? 
+ 
+ ","https://www.microsoft365.com/chat","This coach can help you spark ideas for your projects. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"23","Create images with the Visual Creator<br>agent in Microsoft 365 Copilot. ","Today, we’ll use the Visual Creator agent in Microsoft 365 Copilot to create an image to celebrate a job well done. 
+ 
+Go to Microsoft 365 Copilot Chat, open the side pane on the right, and select Visual Creator. Now use this prompt: ","An image of a simple gold trophy with confetti to recognize a job well done. ","https://www.microsoft365.com/chat"," Add specific details and this coach can help you bring your ideas to life. To learn more or see what’s ahead on your journey, visit https://aka.ms/GreatCopilotJourney. "
+"24","Simplify documents with Writing Coach<br>in Microsoft 365 Copilot. ","Have you ever tried to turn a complicated process into easy-to-follow instructions? It can be challenging, but the Writing Coach agent in Microsoft 365 Copilot is here to help! 
+ 
+Try it out by going to Microsoft 365 Copilot Chat, opening the side pane on the right, and selecting Writing Coach. Then use this prompt: ","Help me write instructions to explain [a complex process]. ","https://www.microsoft365.com/chat","Edit this prompt with relevant details and this coach will help you get started. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"25","Use Prompt Coach in Microsoft 365 Copilot<br>to have some fun. ","This is the last full Fun Day of the Great Copilot Journey, and this time, we’re asking Microsoft 365 Copilot to come up with the fun prompt for your team. 
+ 
+Open up Microsoft 365 Copilot Chat, go to the side pane on the right and select Prompt Coach. Now use this prompt: ","Show me 3 good prompt examples [for fun Copilot prompts that will make my team laugh]. ","https://www.microsoft365.com/chat","Share one of Copilot’s suggestions with your team and have some fun together! 
+
+You’re almost at the end! Next week, we’ll learn about tips and tricks to get the most out of Copilot as you start using it on your own. To learn more or see what’s ahead on your journey, visit https://aka.ms/GreatCopilotJourney. "
+"26","Tips and tricks to get the most out<br>of Microsoft 365 Copilot. ","You’re almost at the end! Today kicks off the last week of the Great Copilot Journey! Now that you’ve completed all the guided prompts, it’s time to explore Microsoft 365 Copilot on your own. This week, we’ll share best practices and various resources that are available to you as you continue your journey. 
+ 
+Let’s start with tips and tricks on how to write the most impactful prompts that get you the results you want. ","Create your own prompts. 
+Use this resource to learn which elements to include in your prompt, how to structure it and more. ","https://aka.ms/GreatCopilotJourney-PromptingTips","Check out the Copilot Prompt Gallery for a large selection of prompts inspirations to try. Share these resources with your teammates. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"27","Learn how to create custom agents<br>in Microsoft 365 Copilot. ","Did you know that you can create your own custom agent in Microsoft 365 Copilot? These AI-driven agents can work alongside you to offer suggestions, automate repetitive tasks and provide insights. Let’s create one! ","Create your own agents. Learn how to use the Business Chat agent builder to easily create your own Copilot agents that fit your specific needs. ","https://aka.ms/GreatCopilotJourney-CreateYourAgent","It’s easy. Just follow these instructions. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"28","Get inspirations for Microsoft 365 Copilot. ","Need some inspiration to see what Microsoft 365 Copilot can do for your specific function or industry? Today’s resource will help. ","Get functional inspiration 
+This scenario library will help you get ideas for how to use Copilot in your specific role or industry. ",,"Check out the Copilot Prompt Gallery for a large selection of prompts inspirations to try. Share these resources with your teammates. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"29","Create your dream destination<br>in Microsoft 365 Copilot. ","Imagine for a moment that anything is possible. What would your dream destination look like? A modern hotel on the moon? Or a trendy café in the heart of a tropical rainforest? How about an underwater restaurant? Let’s use Microsoft 365 Copilot to dream up your destination. ","Dream up your destination 
+Apply your skills with these step-by-step instructions to create your dream destination—with no limits to your imagination. ","https://aka.ms/GreatCopilotJourney-DreamDestinationProject","Complete this project in one session or over time. It takes about 20 min total. 
+
+To learn more or see what’s ahead on your journey,
+visit https://aka.ms/GreatCopilotJourney. "
+"30","You earned a Microsoft 365 Copilot badge! ","Congratulations! You’ve completed the Great Copilot Journey! What an achievement! 
+ 
+Over the past 30 days, you used Microsoft 365 Copilot every day and learned how to leverage Copilot to: 
+ 
+• Save time
+• Kick-start your work
+• Expand your expertise
+• Enhance your team’s collaboration
+• Leverage agents
+• Find resources and inspiration on your own ","Get your badge! 
+To celebrate this exciting milestone, download your Great Copilot Journey completion badge, and share it with your team and network. ","https://aka.ms/GreatCopilotJourney-CompletionBadge","Now, it’s time to embark on your next adventure with Copilot. Keep up your great work and keep practicing your prompts every day to discover new horizons with Copilot always by your side. 
+
+We hope you enjoyed this training experience. To revisit any part of the Great Copilot Journey at any time, visit https://aka.ms/GreatCopilotJourney. "
