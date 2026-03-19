@@ -13,6 +13,7 @@
 - XML files for easier Sharepoint Online List setup have been placed in repository
 - download XML files, then publish on your Tenant, all lists come pre-filled & with according data types
 - then e.g. Invoke-PnPSiteTemplate -Path ".\chatjourneycontent.xml„ (make sure to be in AI at Works sitecollection root)
+- mind needed access and writing rights
 
 <img width="177" height="62" alt="image" src="https://github.com/user-attachments/assets/70db5cd3-3b99-468a-bc2f-0bac7caf41e5" />
 
