@@ -20,16 +20,19 @@ Direct 1:1 Teams nudging turns the agent into an active adoption channel rather 
 <br>
 
 ### Overall Overview
-<img width="855" height="502" alt="image" src="https://github.com/user-attachments/assets/7eed77f6-068b-4666-b422-c2da506a0b1a" />
+<img width="450" height="225" alt="image" src="https://github.com/user-attachments/assets/63280b71-eb91-464b-a5b3-1fa87c6a7cbf" />
 
 ### Agent Experience
 <img width="457" height="418" alt="{C066FFD1-3E03-4C22-A637-7F7B6F821A40}" src="https://github.com/user-attachments/assets/b58d7cf6-8c36-4f3f-8ca2-4cf452a8331d" />
 
 ### Enduser Nudge Experience
-<img width="620" height="390" alt="image" src="https://github.com/user-attachments/assets/061d7ae9-4847-46af-9e58-b05f98517d2f" />
+<img width="400" height="260" alt="image" src="https://github.com/user-attachments/assets/061d7ae9-4847-46af-9e58-b05f98517d2f" />
 
 ### Enduser Prompt Tipps Experience
-<img width="675" height="341" alt="image" src="https://github.com/user-attachments/assets/fde992c4-e9c6-40ac-adba-04b14ceae6cb" />
+<img width="425" height="215" alt="image" src="https://github.com/user-attachments/assets/fde992c4-e9c6-40ac-adba-04b14ceae6cb" />
+
+### NEW Teams App advanced Experience
+<img width="440" height="242" alt="image" src="https://github.com/user-attachments/assets/99d478ac-7157-4200-9b3f-e0b56f991b56" />
 <br>
 <br>
 
