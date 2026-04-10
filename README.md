@@ -1,5 +1,14 @@
 # AI at Work Agent & Adoption Package
 
+### Updates
+10.04.2026
+- Updated Solution package 1.1 with reworked Flows
+  - Added new environment variables for custom nudge icons and button links for indivialization
+  - Agent Flows have accordingly been reworked
+- ! added update solution package "Agent Flows v2.1" to be imported if initial solution package had already been imported / deployed
+- ! after import of NudgeUpdate make sure to add new environment variables and Flows to existing solution, deactivate old flows
+
+
 ### Executive Summary
 AI at Work Agent & Adoption Package is a declarative Copilot agent combined with an adoption framework to enable AI literacy across the entire organization. Users are reached directly in 1:1 Teams chat via proactive agent nudges, ensuring high visibility, relevance, and real acceptance of AI topics in daily work. Its evergreen design allows centrally planned nudges to continuously land monthly feature updates, new scenarios, and learning content directly with users, creating fast, additive value over time.
 
