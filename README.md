@@ -5,7 +5,7 @@
 - Updated Solution package 1.1 with reworked Flows
   - Added new environment variables for custom nudge icons and button links for indivialization
   - Agent Flows have accordingly been reworked
-- ! added update solution package "Agent Flows v2.1" to be imported if initial solution package had already been imported / deployed
+- ! added update solution package "Nudge Updates solution v2.1" to be imported if initial solution package had already been imported / deployed
 - ! after import of NudgeUpdate make sure to add new environment variables and Flows to existing solution, deactivate old flows
 
 
