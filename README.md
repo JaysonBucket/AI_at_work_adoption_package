@@ -1,6 +1,6 @@
 # AI at Work Agent & Adoption Package
 
-This project is part of a broader set of Copilot resources and learning materials. Check out my projects site to grt an overview:
+This is part of a broader set of Copilot agent and learning materials. Check out my projects site to get an overview:
 https://www.jaysons.dev
 
 ### Updates
