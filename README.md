@@ -1,5 +1,8 @@
 # AI at Work Agent & Adoption Package
 
+This project is part of a broader set of Copilot resources and learning materials. Check out my projects site to grt an overview:
+https://www.jaysons.dev
+
 ### Updates
 10.04.2026
 - Updated Solution package 1.1 with reworked Flows
